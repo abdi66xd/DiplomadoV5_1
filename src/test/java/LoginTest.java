@@ -1,17 +1,18 @@
 import base.BaseTest;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import task.tasking.Login;
 import task.tasking.Register;
 import task.validations.IsLoginSuccessMessage;
 
 import static task.validations.IsLoginSuccessMessage.getTextSuccess;
 
-public class RegisterTest extends BaseTest {
+public class LoginTest extends BaseTest {
 
     @Test
-    public void authenticationSuccessfullTest() throws InterruptedException {
-        Register.as(webDriver, "userrandomefowmefowefwefewfewf+3@gmail.com", "pass");
-        Thread.sleep(5000);
+    public void loginTest() throws InterruptedException {
+        Login.as(webDriver, "abdiasalpire12@gmail.com", "123");
+
         Assert.assertTrue(true, getTextSuccess(webDriver));
     }
 }

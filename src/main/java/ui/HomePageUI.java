@@ -14,4 +14,10 @@ public class HomePageUI {
     public static By signUpButton = By.xpath("(//input[@id='ctl00_MainContent_SignupControl1_ButtonSignup'])[1]");
 
 
+    public static By login_user = By.xpath("//input[@id='ctl00_MainContent_LoginControl1_TextBoxEmail']");
+
+    public static By pass_user = By.xpath("(//input[@id='ctl00_MainContent_LoginControl1_TextBoxPassword'])[1]");
+
+    public static By login_button = By.xpath("//input[@id='ctl00_MainContent_LoginControl1_ButtonLogin']");
+
 }
